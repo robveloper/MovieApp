@@ -1,6 +1,5 @@
 package cl.robveloper.movieapp.data.local
 
-import cl.robveloper.movieapp.application.AppConstants
 import cl.robveloper.movieapp.data.model.MovieEntity
 import cl.robveloper.movieapp.data.model.MovieList
 import cl.robveloper.movieapp.data.model.toMovieList

@@ -10,7 +10,8 @@ import cl.robveloper.movieapp.ui.movie.adapter.MovieAdapter
 class PopularConcatAdapter(private val moviesAdapter: MovieAdapter): RecyclerView.Adapter<BaseConcatHolder<*>>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseConcatHolder<*> {
-        val itemBinding = PopularMoviesRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val itemBinding =
+            PopularMoviesRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ConcatViewHolder(itemBinding)
     }
 
@@ -23,8 +24,9 @@ class PopularConcatAdapter(private val moviesAdapter: MovieAdapter): RecyclerVie
     override fun getItemCount(): Int = 1
 
 
-    private inner class ConcatViewHolder(val binding: PopularMoviesRowBinding): BaseConcatHolder<MovieAdapter>(binding.root){
-        override fun bind(adapter: MovieAdapter){
+    private inner class ConcatViewHolder(val binding: PopularMoviesRowBinding) :
+        BaseConcatHolder<MovieAdapter>(binding.root) {
+        override fun bind(adapter: MovieAdapter) {
             binding.rvPopularMovies.adapter = adapter
 
         }
